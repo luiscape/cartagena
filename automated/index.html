@@ -55,7 +55,7 @@
                 </p>
                 <!-- <div style="border: none;"><img src="img/hdx_logo.png"></div> -->
             </section>
-            <section data-state="start01" data-autoslide="12000" data-background-iframe="http://data.hdx.rwlabs.org/">
+            <section data-state="start01" data-autoslide="18000" data-background-iframe="http://data.hdx.rwlabs.org/">
                 <script>
                 Reveal.addEventListener('start01', function() {
                     var script = [
@@ -99,7 +99,7 @@
                         "wait->2000",
                         "move->500,200->2000",
                         "wait->2000",
-                        "move->2000,300"
+                        "move->2000,300->2000"
                     ];
                     autoplay.loadScript(script);
                 }, false);
@@ -122,7 +122,7 @@
                 }, false);
                 </script>
             </section>
-            <section data-background-iframe="http://data.hdx.rwlabs.org/organization/somalia-ngo-consortium"></section>
+            <!-- <section data-background-iframe="http://data.hdx.rwlabs.org/organization/somalia-ngo-consortium"></section> -->
             <section data-state="start06" data-autoslide="25000" data-background-iframe="http://data.hdx.rwlabs.org/group/hti">
                 <script>
                 Reveal.addEventListener('start06', function() {
@@ -151,11 +151,9 @@
                         "move->100,120",
                         "display->Some country pages are custom-designed.->4000",
                         "wait->2000",
-                        "move->1000,300->2000",
-                        "click->1000,300",
+                        "move->300,600->2000",
                         "wait->2000",
-                        "move->300,1000->2000",
-                        "click->300,1000",
+                        "move->1000,600->2000",
                         "wait->2000",
                         "move->2000,300->2000"
                     ];
@@ -169,13 +167,13 @@
                     var script = [
                         "move->100,100",
                         "move->100,120",
-                        "display->Country pages visualize relevant indicators.->4000",
+                        "display->Organization pages have custom look and feel.->4000",
                         "wait->2000",
                         "move->1000,300->2000",
-                        "click->1000,300",
                         "wait->2000",
-                        "move->300,1000->2000",
-                        "click->300,1000",
+                        "move->1000,600->2000",
+                        "wait->2000",
+                        "move->1000,1000->2000",
                         "wait->2000",
                         "move->2000,300->2000"
                     ];
@@ -183,64 +181,211 @@
                 }, false);
                 </script>
             </section>
-            <section>
+            <section data-state="start09" data-autoslide="20000">
+                <script>
+                Reveal.addEventListener('start09', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->Embedable visualization.->2000",
+                        "wait->2000",
+                        "move->300,600->2000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
                 <h2>Embed Capabilities</h2>
-                <iframe src="//test-data.hdx.rwlabs.org/widget/WFP?embedded=true&adm0=181&prod=Beans&unit=KG&size=medium" width=900 height=600></iframe>
+                <p>Visualizations can be embedend and remain fully interactive.</p>
+                <iframe src="http://test-data.hdx.rwlabs.org/widget/WFP?embedded=true&adm0=181&prod=Beans&unit=KG&size=medium" width=900 height=600></iframe>
             </section>
-            <section data-background-iframe="https://data.hdx.rwlabs.org/dataset/syria-border-crossings"></section>
-            <section data-background-iframe="http://data.hdx.rwlabs.org/ebola"></section>
-            <section data-background-iframe="http://data.hdx.rwlabs.org/dataset/ebola-cases-2014"></section>
-            <section data-background-iframe="http://data.hdx.rwlabs.org/dataset/new"></section>
-            <section>
+            <section data-state="start10" data-autoslide="20000" data-background-iframe="https://data.hdx.rwlabs.org/dataset/syria-border-crossings">
+                <script>
+                Reveal.addEventListener('start10', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->Quickly visualize geographic data with geo-preview.->2000",
+                        "wait->2000",
+                        "move->300,600->2000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
+            </section>
+            <section data-state="start11" data-autoslide="20000" data-background-iframe="http://data.hdx.rwlabs.org/ebola">
+                <script>
+                Reveal.addEventListener('start11', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->Crisis pages display accurate and timely data.->2000",
+                        "wait->2000",
+                        "move->300,600->2000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
+            </section>
+            <section data-state="start12" data-autoslide="20000" data-background-iframe="http://data.hdx.rwlabs.org/dataset/ebola-cases-2014">
+                <script>
+                Reveal.addEventListener('start12', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->Datasets with full metadata.->2000",
+                        "wait->2000",
+                        "move->300,600->2000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
+            </section>
+            <section data-state="start13" data-autoslide="20000">
+                <script>
+                Reveal.addEventListener('start13', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->HDX collects data manually and automatically from many sources.->5000",
+                        "wait->2000",
+                        "move->300,600->2000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
+                <div style="text-align: center;">
+                    <img src="img/hdx-system-diagram.png">
+                </div>
+            </section>
+            <section data-state="start14" data-autoslide="20000" data-background-iframe="http://data.hdx.rwlabs.org/dataset/new">
+                <script>
+                Reveal.addEventListener('start14', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->Easy to share data manually.->4000",
+                        "wait->2000",
+                        "move->300,1000->2000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
+            </section>
+            <section data-state="start15" data-autoslide="15000">
+                <script>
+                Reveal.addEventListener('start15', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->Or automatically via our open API.->3000",
+                        "wait->2000",
+                        "move->300,600->2000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
+                <img src="img/open_api_diagram.png">
+            </section>
+            <section data-state="start16" data-autoslide="11000">
+                <script>
+                Reveal.addEventListener('start16', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->An open API allows anyone to use data on HDX.->4000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
+                <div data-autoslide="5000" style="text-align: center;">
+                    <img src="img/google.png">
+                </div>
+            </section>
+            <section data-autoslide="5000">
+                <div style="text-align: center;">
+                    <img src="img/nytimes.png">
+                </div>
+            </section>
+            <section data-autoslide="5000">
+                <div style="text-align: center;">
+                    <img src="img/guardian.png">
+                </div>
+            </section>
+            <section data-autoslide="5000" data-background-iframe="http://luiscape.github.io/ebola-fts-dashboard/"></section>
+            <section data-state="start17" data-autoslide="13000">
+                <script>
+                Reveal.addEventListener('start17', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->HDX has a quality standard process with 5 elements.->4000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
                 <div style="text-align: center;">
                     <h2>Quality Assurance</h2>
                     <img src="img/quality_radial_chart.png">
                 </div>
             </section>
-            <section>
-                <div style="text-align: center;">
-                    <img src="img/hdx-system-diagram.png">
-                </div>
+            <section data-state="start18" data-autoslide="10000" data-background-iframe="http://luiscape.github.io/eastafrica-data-heatmap/">
+                <script>
+                Reveal.addEventListener('start18', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->HDX also makes data-availability assessments.->4000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
             </section>
-            <section>
-                <img src="img/open_api_diagram.png">
+            <section data-state="start19" data-autoslide="10000" data-background-iframe="http://www.funnel.space">
+                <script>
+                Reveal.addEventListener('start19', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->HDX is an increasingly popular service.->4000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
             </section>
-            <section>
-                <div style="text-align: center;">
-                    <img src="img/google.png">
-                </div>
-            </section>
-            <section>
-                <div style="text-align: center;">
-                    <img src="img/nytimes.png">
-                </div>
-            </section>
-            <section>
-                <div style="text-align: center;">
-                    <img src="img/guardian.png">
-                </div>
-            </section>
-            <section data-background-iframe="http://luiscape.github.io/ebola-fts-dashboard/">
-            </section>
-            <section data-background-iframe="http://www.funnel.space"></section>
-            <section data-background-iframe="http://luiscape.github.io/eastafrica-data-heatmap/"></section>
             <section data-background="#2c3e50">
                 <h2>How can you support HDX?</h2>
             </section>
-            <section data-background="#2c3e50">
+            <section data-autoslide="2000" data-background="#2c3e50">
                 <p class="fragment" data-fragment-index="1"><strong>Share Data: </strong><a href="https://data.hdx.rwlabs.org">https://data.hdx.rwlabs.org</a></p>
                 <p class="fragment" data-fragment-index="2"><strong>Volunteer: </strong><a href="mailto:hdx@un.org">hdx@un.org</a></p>
                 <p class="fragment" data-fragment-index="3"><strong>Join the Conversation: </strong><a href="http://twitter.com/humdata">@humdata</a></p>
             </section>
-            <section data-background="#2c3e50">
-                <h2>Thank you.</h2>
-                <h4>@humdata</h4>
-            </section>
-            <section data-background="#2c3e50">
+            <section data-autoslide="6000" data-background="#2c3e50">
                 <div style="text-align: center;">
-                    <!-- <h2>Humanitarian Data Exchange</h2> -->
-                    <img src="img/hdx_logo.png">
-                    <p><a href="https://data.hdx.rwlabs.org">data.hdx.rwlabs.org</a></p>
+                    <h2>Thank you</h2>
+                    <h4><a href="http://twitter.com/humdata">@humdata</a></h4>
                 </div>
             </section>
             <!-- Extra Slide -->

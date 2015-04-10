@@ -48,21 +48,20 @@
                 autoplay.init();
                 </script>
             </section>
-            <section data-background="#2c3e50" data-autoslide="3000">
+            <section data-background="#2c3e50" data-autoslide="10000">
                 <h2>What is HDX?</h2>
                 <p>
-                    The Humanitarian Data Exchange (HDX) is OCHA’s open platform for sharing humanitarian data. HDX’s objective is to make humanitarian data easy to find and easy to use for analysis.
+                    The Humanitarian Data Exchange (HDX) is OCHA’s open platform for sharing humanitarian data. HDX’s objective is to make humanitarian data <strong>easy to find</strong> and <strong>easy to use for analysis</strong>.
                 </p>
                 <!-- <div style="border: none;"><img src="img/hdx_logo.png"></div> -->
             </section>
-            <section data-state="start01" data-background-iframe="http://data.hdx.rwlabs.org/" id="hdx-main" data-autoslide="12000">
+            <section data-state="start01" data-autoslide="12000" data-background-iframe="http://data.hdx.rwlabs.org/">
                 <script>
                 Reveal.addEventListener('start01', function() {
-                    f
                     var script = [
                         "move->100,100",
                         "move->100,120",
-                        "display->Search hundreds of datasets->3000",
+                        "display->Search hundreds of humanitarian datasets->3000",
                         "wait->2000",
                         "move->1000,340->3000",
                         "wait->2000",
@@ -72,15 +71,13 @@
                 }, false);
                 </script>
             </section>
-            <!--             <section data-background-iframe="http://localhost:8000">
-            </section> -->
-            <section data-autoslide="20000" data-state="start02" data-background-iframe="http://data.hdx.rwlabs.org/search?q=sanitation">
+            <section data-state="start02" data-autoslide="20000" data-background-iframe="http://data.hdx.rwlabs.org/search?q=sanitation">
                 <script>
                 Reveal.addEventListener('start02', function() {
                     var script = [
                         "move->100,100",
                         "move->100,120",
-                        "display->Explore select indicators and user-contributed datasets.->4000",
+                        "display->Explore select indicators and datasets from dozens of sources.->4000",
                         "wait->2000",
                         "move->300,300->2000",
                         "wait->3000",
@@ -92,7 +89,7 @@
                 }, false);
                 </script>
             </section>
-            <section data-autoslide="17000" data-background-iframe="https://data.hdx.rwlabs.org/dataset?res_format=CSV&sort=metadata_modified+desc" data-state="start03">
+            <section data-state="start03" data-autoslide="14000" data-background-iframe="https://data.hdx.rwlabs.org/dataset?res_format=CSV&sort=metadata_modified+desc">
                 <script>
                 Reveal.addEventListener('start03', function() {
                     var script = [
@@ -102,13 +99,13 @@
                         "wait->2000",
                         "move->500,200->2000",
                         "wait->2000",
-                        "move->2000,300->2000"
+                        "move->2000,300"
                     ];
                     autoplay.loadScript(script);
                 }, false);
                 </script>
             </section>
-            <section data-autoslide="20000" data-state="start04" data-background-iframe="http://data.hdx.rwlabs.org/browse">
+            <section data-state="start04" data-autoslide="20000" data-background-iframe="http://data.hdx.rwlabs.org/browse">
                 <script>
                 Reveal.addEventListener('start04', function() {
                     var script = [
@@ -116,8 +113,8 @@
                         "move->100,120",
                         "display->Browse our collection by country, topic, and more.->4000",
                         "wait->2000",
-                        "goclick->body > div.reveal.slide.center > div.backgrounds > div:nth-child(8) > iframe",
-                        "move->1500,500->2000",
+                        "goclick->body > div.reveal.slide.center > div.backgrounds > div:nth-child(8) > iframe->2000",
+                        "goclick->300,1000->2000",
                         "wait->3000",
                         "move->2000,300->2000"
                     ];
@@ -126,25 +123,83 @@
                 </script>
             </section>
             <section data-background-iframe="http://data.hdx.rwlabs.org/organization/somalia-ngo-consortium"></section>
-            <section data-background-iframe="http://data.hdx.rwlabs.org/group/hti"></section>
-            <section data-background-iframe="http://data.hdx.rwlabs.org/organization/wfp"></section>
-            <section data-background-iframe="http://data.hdx.rwlabs.org/group/col"></section>
-            <section data-background-iframe="https://test-data.hdx.rwlabs.org/organization/wfp"></section>
+            <section data-state="start06" data-autoslide="25000" data-background-iframe="http://data.hdx.rwlabs.org/group/hti">
+                <script>
+                Reveal.addEventListener('start06', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->Country pages visualize relevant indicators.->4000",
+                        "wait->2000",
+                        "move->1000,300->2000",
+                        "click->1000,300",
+                        "wait->2000",
+                        "move->300,1000->2000",
+                        "click->300,1000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
+            </section>
+            <section data-state="start07" data-autoslide="25000" data-background-iframe="http://data.hdx.rwlabs.org/group/col">
+                <script>
+                Reveal.addEventListener('start07', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->Some country pages are custom-designed.->4000",
+                        "wait->2000",
+                        "move->1000,300->2000",
+                        "click->1000,300",
+                        "wait->2000",
+                        "move->300,1000->2000",
+                        "click->300,1000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
+            </section>
+            <section data-state="start08" data-autoslide="25000" data-background-iframe="https://test-data.hdx.rwlabs.org/organization/wfp">
+                <script>
+                Reveal.addEventListener('start08', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->Country pages visualize relevant indicators.->4000",
+                        "wait->2000",
+                        "move->1000,300->2000",
+                        "click->1000,300",
+                        "wait->2000",
+                        "move->300,1000->2000",
+                        "click->300,1000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
+            </section>
             <section>
                 <h2>Embed Capabilities</h2>
                 <iframe src="//test-data.hdx.rwlabs.org/widget/WFP?embedded=true&adm0=181&prod=Beans&unit=KG&size=medium" width=900 height=600></iframe>
             </section>
-            <section data-background-iframe="http://www.funnel.space"></section>
             <section data-background-iframe="https://data.hdx.rwlabs.org/dataset/syria-border-crossings"></section>
-            <section data-background-iframe="http://luiscape.github.io/eastafrica-data-heatmap/"></section>
             <section data-background-iframe="http://data.hdx.rwlabs.org/ebola"></section>
             <section data-background-iframe="http://data.hdx.rwlabs.org/dataset/ebola-cases-2014"></section>
             <section data-background-iframe="http://data.hdx.rwlabs.org/dataset/new"></section>
             <section>
                 <div style="text-align: center;">
                     <h2>Quality Assurance</h2>
-                    <p style="font-size:20px;">Data quality in HDX is assessed by the following five dimensions:</p>
-                    <img src="img/qaf.png">
+                    <img src="img/quality_radial_chart.png">
+                </div>
+            </section>
+            <section>
+                <div style="text-align: center;">
+                    <img src="img/hdx-system-diagram.png">
                 </div>
             </section>
             <section>
@@ -160,26 +215,34 @@
                     <img src="img/nytimes.png">
                 </div>
             </section>
+            <section>
+                <div style="text-align: center;">
+                    <img src="img/guardian.png">
+                </div>
+            </section>
             <section data-background-iframe="http://luiscape.github.io/ebola-fts-dashboard/">
             </section>
-            <section data-background="#2980b9">
+            <section data-background-iframe="http://www.funnel.space"></section>
+            <section data-background-iframe="http://luiscape.github.io/eastafrica-data-heatmap/"></section>
+            <section data-background="#2c3e50">
                 <h2>How can you support HDX?</h2>
             </section>
-            <section data-background="#2980b9">
+            <section data-background="#2c3e50">
                 <p class="fragment" data-fragment-index="1"><strong>Share Data: </strong><a href="https://data.hdx.rwlabs.org">https://data.hdx.rwlabs.org</a></p>
                 <p class="fragment" data-fragment-index="2"><strong>Volunteer: </strong><a href="mailto:hdx@un.org">hdx@un.org</a></p>
-                <p class="fragment" data-fragment-index="3"><strong>Join the Conversation: </strong>@humdata</p>
+                <p class="fragment" data-fragment-index="3"><strong>Join the Conversation: </strong><a href="http://twitter.com/humdata">@humdata</a></p>
             </section>
-            <section data-background="#404040">
+            <section data-background="#2c3e50">
                 <h2>Thank you.</h2>
                 <h4>@humdata</h4>
             </section>
-            <section data-background="#404040">
-                <h2>Humanitarian Data Exchange</h2>
-                <p><a href="https://data.hdx.rwlabs.org">hdx.rwlabs.org</a></p>
+            <section data-background="#2c3e50">
+                <div style="text-align: center;">
+                    <!-- <h2>Humanitarian Data Exchange</h2> -->
+                    <img src="img/hdx_logo.png">
+                    <p><a href="https://data.hdx.rwlabs.org">data.hdx.rwlabs.org</a></p>
+                </div>
             </section>
-            <section data-background="#404040"></section>
-            <section data-background="#404040"></section>
             <!-- Extra Slide -->
             <!--            <section data-background-iframe="http://a.tiles.mapbox.com/v4/luiscapelo.jlpda14n/attribution,zoompan.html?access_token=pk.eyJ1IjoibHVpc2NhcGVsbyIsImEiOiJZeFo3b0pNIn0.45gYdbaSP04kpEIuLwSA9w">
                 <h3>Displaced<br/> People in <br/>Colombia</h3>

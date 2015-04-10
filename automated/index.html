@@ -55,19 +55,18 @@
                 </p>
                 <!-- <div style="border: none;"><img src="img/hdx_logo.png"></div> -->
             </section>
-            <section data-state="start01" data-background-iframe="http://data.hdx.rwlabs.org/" id="hdx-main" data-autoslide="20000">
+            <section data-state="start01" data-background-iframe="http://data.hdx.rwlabs.org/" id="hdx-main" data-autoslide="12000">
                 <script>
                 Reveal.addEventListener('start01', function() {
+                    f
                     var script = [
                         "move->100,100",
                         "move->100,120",
-                        "display->Search",
+                        "display->Search hundreds of datasets->3000",
                         "wait->2000",
                         "move->1000,340->3000",
                         "wait->2000",
-                        "display->Browse",
-                        "move->800,60->3000",
-                        "wait->5000",
+                        "move->2000,300->2000"
                     ];
                     autoplay.loadScript(script);
                 }, false);
@@ -81,31 +80,66 @@
                     var script = [
                         "move->100,100",
                         "move->100,120",
-                        "display->Search Results",
+                        "display->Explore select indicators and user-contributed datasets.->4000",
                         "wait->2000",
-                        "move->1600,340->3000",
-                        "click->1600,340",
-                        "scrolly->1000",
-                        "wait->2000",
-                        "display->Intuitive Icons",
-                        "move->1000,600->3000",
+                        "move->300,300->2000",
                         "wait->3000",
+                        "move->300,800->2000",
+                        "wait->3000",
+                        "move->2000,300->2000"
                     ];
                     autoplay.loadScript(script);
                 }, false);
                 </script>
             </section>
-            <section data-background-iframe="http://data.hdx.rwlabs.org/browse">
+            <section data-autoslide="17000" data-background-iframe="https://data.hdx.rwlabs.org/dataset?res_format=CSV&sort=metadata_modified+desc" data-state="start03">
+                <script>
+                Reveal.addEventListener('start03', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->Filter by organizations, tags, locations, and more.->4000",
+                        "wait->2000",
+                        "move->500,200->2000",
+                        "wait->2000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
+            </section>
+            <section data-autoslide="20000" data-state="start04" data-background-iframe="http://data.hdx.rwlabs.org/browse">
+                <script>
+                Reveal.addEventListener('start04', function() {
+                    var script = [
+                        "move->100,100",
+                        "move->100,120",
+                        "display->Browse our collection by country, topic, and more.->4000",
+                        "wait->2000",
+                        "goclick->body > div.reveal.slide.center > div.backgrounds > div:nth-child(8) > iframe",
+                        "move->1500,500->2000",
+                        "wait->3000",
+                        "move->2000,300->2000"
+                    ];
+                    autoplay.loadScript(script);
+                }, false);
+                </script>
             </section>
             <section data-background-iframe="http://data.hdx.rwlabs.org/organization/somalia-ngo-consortium"></section>
-            <section data-background-iframe="http://data.hdx.rwlabs.org/group/gin"></section>
+            <section data-background-iframe="http://data.hdx.rwlabs.org/group/hti"></section>
             <section data-background-iframe="http://data.hdx.rwlabs.org/organization/wfp"></section>
             <section data-background-iframe="http://data.hdx.rwlabs.org/group/col"></section>
-            <section data-background-iframe="http://data.hdx.rwlabs.org/dataset/global-logistics"></section>
+            <section data-background-iframe="https://test-data.hdx.rwlabs.org/organization/wfp"></section>
+            <section>
+                <h2>Embed Capabilities</h2>
+                <iframe src="//test-data.hdx.rwlabs.org/widget/WFP?embedded=true&adm0=181&prod=Beans&unit=KG&size=medium" width=900 height=600></iframe>
+            </section>
+            <section data-background-iframe="http://www.funnel.space"></section>
+            <section data-background-iframe="https://data.hdx.rwlabs.org/dataset/syria-border-crossings"></section>
             <section data-background-iframe="http://luiscape.github.io/eastafrica-data-heatmap/"></section>
             <section data-background-iframe="http://data.hdx.rwlabs.org/ebola"></section>
             <section data-background-iframe="http://data.hdx.rwlabs.org/dataset/ebola-cases-2014"></section>
-            <section data-background-iframe="https://data.hdx.rwlabs.org/dataset/new"></section>
+            <section data-background-iframe="http://data.hdx.rwlabs.org/dataset/new"></section>
             <section>
                 <div style="text-align: center;">
                     <h2>Quality Assurance</h2>
@@ -116,43 +150,25 @@
             <section>
                 <img src="img/open_api_diagram.png">
             </section>
-            <section data-background='#2c3e50'>
+            <section>
                 <div style="text-align: center;">
-                    <img src="img/google_public.png">
+                    <img src="img/google.png">
                 </div>
             </section>
-            <section data-background='#2c3e50'>
+            <section>
                 <div style="text-align: center;">
-                    <img src="img/nytimes_map.png">
+                    <img src="img/nytimes.png">
                 </div>
             </section>
-            <section data-background-iframe="http://simonbjohnson.github.io/ebola-fts-dashboard/">
+            <section data-background-iframe="http://luiscape.github.io/ebola-fts-dashboard/">
             </section>
-            <section data-background='#2c3e50'>
-                <h2>Data hunting</h2>
-            </section>
-            <!-- <section data-background='#2c3e50'>
-                <img src="img/vam.png">
-            </section>
-            <section data-background='#2c3e50'>
-                <img src="img/food_prices.png">
-            </section>
-            <section data-background='#2c3e50'>
-                <img src="img/igc_mit.png">
-            </section>
-            <section data-background='#2c3e50'>
-                <img src="img/mit_data.png">
-            </section> -->
-            <!--             <section data-background='#2c3e50'>
-                <img src="img/scrapers.png">
-            </section> -->
             <section data-background="#2980b9">
                 <h2>How can you support HDX?</h2>
             </section>
             <section data-background="#2980b9">
-                <p class="fragment" data-fragment-index="1"><strong>Share Data</strong></p>
-                <p class="fragment" data-fragment-index="2"><strong>Volunteer</strong> </p>
-                <p class="fragment" data-fragment-index="3"><strong>Join the Conversation</strong></p>
+                <p class="fragment" data-fragment-index="1"><strong>Share Data: </strong><a href="https://data.hdx.rwlabs.org">https://data.hdx.rwlabs.org</a></p>
+                <p class="fragment" data-fragment-index="2"><strong>Volunteer: </strong><a href="mailto:hdx@un.org">hdx@un.org</a></p>
+                <p class="fragment" data-fragment-index="3"><strong>Join the Conversation: </strong>@humdata</p>
             </section>
             <section data-background="#404040">
                 <h2>Thank you.</h2>
@@ -160,7 +176,7 @@
             </section>
             <section data-background="#404040">
                 <h2>Humanitarian Data Exchange</h2>
-                <p><a href="http://hdx.rwlabs.org">hdx.rwlabs.org</a></p>
+                <p><a href="https://data.hdx.rwlabs.org">hdx.rwlabs.org</a></p>
             </section>
             <section data-background="#404040"></section>
             <section data-background="#404040"></section>
@@ -184,7 +200,7 @@
         help: false,
         transitionSpeed: 'slow',
         slideNumber: false,
-        autoSlide: 10000,
+        // autoSlide: 10000,
         loop: true,
 
         transition: 'slide', // none/fade/slide/convex/concave/zoom
